@@ -7,7 +7,7 @@ df = pd.read_csv('../Datasets/Weather2014-15.csv')
 df['date'] = pd.to_datetime(df['date'])
 
 # Preparing data
-data = [go.Scatter(x=df['date'], y=df['actual_max_temp'], mode='lines', name='average_max_temp')]
+data = [go.Scatter(x=df['date'], y=df['actual_max_temp'], mode='lines', name='actual_max_temp')]
 
 # Preparing layout
 layout = go.Layout(title='Weather Actual Max Temperature from 2014-2015',
